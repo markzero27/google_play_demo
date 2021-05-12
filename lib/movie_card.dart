@@ -19,8 +19,11 @@ class MovieCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(
+            Image.network(
               '$image',
+              height: 230,
+              width: 170,
+              fit: BoxFit.cover,
             ),
             Container(
               padding: EdgeInsets.only(
